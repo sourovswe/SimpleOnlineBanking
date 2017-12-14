@@ -80,10 +80,14 @@ public class Test extends javax.swing.JFrame {
         });
         getContentPane().add(jButton6);
         jButton6.setBounds(296, 333, 145, 37);
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 720, 480);
 
-        pack();
+        jLabel2.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel2.setOpaque(true);
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 720, 490);
+
+        setSize(new java.awt.Dimension(739, 533));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

@@ -68,7 +68,7 @@ public class Cashout extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(318, 386, 85, 53);
+        jButton1.setBounds(300, 380, 110, 53);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton2.setText("HOME");
@@ -90,7 +90,8 @@ public class Cashout extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 0, 790, 570);
 
-        pack();
+        setSize(new java.awt.Dimension(808, 618));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void cfmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cfmActionPerformed

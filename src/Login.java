@@ -35,6 +35,8 @@ public class Login extends javax.swing.JFrame {
         LoginButton = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -43,7 +45,7 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Username");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(110, 140, 92, 22);
+        jLabel1.setBounds(130, 190, 92, 22);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,12 +53,12 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(290, 140, 178, 22);
+        jTextField1.setBounds(270, 190, 178, 22);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setText("Password");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(120, 210, 87, 22);
+        jLabel2.setBounds(130, 250, 87, 22);
 
         LoginButton.setBackground(new java.awt.Color(51, 51, 51));
         LoginButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -68,7 +70,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LoginButton);
-        LoginButton.setBounds(290, 350, 178, 37);
+        LoginButton.setBounds(270, 410, 178, 37);
 
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,12 +78,22 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(290, 220, 178, 22);
+        jPasswordField1.setBounds(270, 250, 178, 22);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
         jLabel3.setText("Online Banking System");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(260, 30, 290, 50);
+        jLabel3.setBounds(230, 90, 290, 50);
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel5.setText("Welcome");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(310, 10, 120, 40);
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel6.setText("To");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(340, 60, 40, 30);
 
         jLabel4.setBackground(new java.awt.Color(0, 153, 153));
         jLabel4.setOpaque(true);
@@ -168,6 +180,8 @@ String p=jPasswordField1.getText();
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables

@@ -160,6 +160,8 @@ if(cfm.isSelected()==true){
        File f = new File("LastTransaction.txt");
        try(FileWriter fr=new FileWriter(f,true)){
        fr.write(String.valueOf(x));
+       fr.write("\r\n");
+       fr.close();
        }
        catch(Exception e){
        

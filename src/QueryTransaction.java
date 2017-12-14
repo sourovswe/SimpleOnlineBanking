@@ -56,6 +56,8 @@ public class QueryTransaction extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1);
         jButton1.setBounds(330, 210, 306, 126);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(300, 392, 352, 120);
         getContentPane().add(jTextField1);
@@ -101,7 +103,7 @@ String v;
 try {
             Scanner s= new Scanner(f);
             while(s.hasNext()){
-         v=   s.nextLine();
+         v=   s.nextLine()+"\r\n";
             if(jTextField1.getText().equals("1735")){
            jLabel1.setText(v); }
            else{

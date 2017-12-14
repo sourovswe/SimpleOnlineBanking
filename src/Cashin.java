@@ -68,8 +68,10 @@ check = b;
         cfm = new javax.swing.JCheckBox();
         jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 204, 255));
         getContentPane().setLayout(null);
 
         jLabel1.setBackground(new java.awt.Color(51, 51, 51));
@@ -121,6 +123,11 @@ check = b;
         jLabel2.setText("Amount Cashed In");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(444, 115, 105, 16);
+
+        jLabel3.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel3.setOpaque(true);
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 640, 410);
 
         setSize(new java.awt.Dimension(654, 452));
         setLocationRelativeTo(null);
@@ -220,6 +227,7 @@ dispose();
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables

@@ -34,6 +34,7 @@ public class Cashout extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         cfm = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,6 +55,14 @@ public class Cashout extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton2.setText("HOME");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -69,6 +78,10 @@ public class Cashout extends javax.swing.JFrame {
                             .addComponent(cfm)
                             .addComponent(jButton1))))
                 .addContainerGap(279, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(119, 119, 119))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -81,7 +94,9 @@ public class Cashout extends javax.swing.JFrame {
                 .addComponent(cfm)
                 .addGap(67, 67, 67)
                 .addComponent(jButton1)
-                .addContainerGap(196, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(81, 81, 81))
         );
 
         pack();
@@ -97,16 +112,26 @@ public class Cashout extends javax.swing.JFrame {
     }//GEN-LAST:event_cfmActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-double a = Double.parseDouble(jTextField2.getText());
+if(cfm.isSelected()==true){
+        double a = Double.parseDouble(jTextField2.getText());
 if (a<50){
     JOptionPane.showMessageDialog(null,"Transaction Not possible");
 }
     else{   
     JOptionPane.showMessageDialog(null,a+ "withdrow complete " );        
             }
-        
+}
+else{
+JOptionPane.showMessageDialog(null, "Confirm first");
+}
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+Test t=new Test();
+t.setVisible(true);
+dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -146,6 +171,7 @@ if (a<50){
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox cfm;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField2;

@@ -35,25 +35,40 @@ public class Cashout extends javax.swing.JFrame {
         cfm = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(jTextField2);
+        jTextField2.setBounds(291, 219, 126, 28);
+
+        jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel2.setText("Cash Out");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(291, 144, 126, 32);
 
+        cfm.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         cfm.setText("confirm");
         cfm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cfmActionPerformed(evt);
             }
         });
+        getContentPane().add(cfm);
+        cfm.setBounds(296, 282, 107, 37);
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(318, 386, 85, 53);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton2.setText("HOME");
@@ -62,42 +77,18 @@ public class Cashout extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(563, 386, 105, 53);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(291, 291, 291)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(cfm)
-                            .addComponent(jButton1))))
-                .addContainerGap(279, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(119, 119, 119))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(138, 138, 138)
-                .addComponent(jLabel2)
-                .addGap(43, 43, 43)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(cfm)
-                .addGap(67, 67, 67)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(81, 81, 81))
-        );
+        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel1.setText("Online Banking System");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(267, 58, 290, 30);
+
+        jLabel3.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel3.setOpaque(true);
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 790, 570);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -172,7 +163,9 @@ dispose();        // TODO add your handling code here:
     private javax.swing.JCheckBox cfm;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables

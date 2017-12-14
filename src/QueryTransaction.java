@@ -40,7 +40,8 @@ public class QueryTransaction extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(850, 550));
@@ -80,10 +81,16 @@ public class QueryTransaction extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(693, 420, 105, 37);
 
-        jLabel5.setBackground(new java.awt.Color(0, 153, 153));
-        jLabel5.setOpaque(true);
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 0, 870, 520);
+        jLabel6.setBackground(new java.awt.Color(255, 204, 102));
+        jLabel6.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel6.setText("Online Banking System");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(340, 20, 290, 40);
+
+        jLabel4.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel4.setOpaque(true);
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 0, 870, 520);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -155,7 +162,8 @@ dispose();      // TODO add your handling code here:
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

@@ -34,6 +34,7 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         LoginButton = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,7 +43,7 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Username");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(100, 90, 92, 22);
+        jLabel1.setBounds(110, 140, 92, 22);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -50,12 +51,12 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(260, 90, 178, 22);
+        jTextField1.setBounds(290, 140, 178, 22);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setText("Password");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(100, 140, 87, 22);
+        jLabel2.setBounds(120, 210, 87, 22);
 
         LoginButton.setBackground(new java.awt.Color(51, 51, 51));
         LoginButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -67,7 +68,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LoginButton);
-        LoginButton.setBounds(260, 250, 178, 37);
+        LoginButton.setBounds(290, 350, 178, 37);
 
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,14 +76,19 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(260, 150, 178, 22);
+        jPasswordField1.setBounds(290, 220, 178, 22);
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel3.setText("Online Banking System");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(260, 30, 290, 50);
 
         jLabel4.setBackground(new java.awt.Color(0, 153, 153));
         jLabel4.setOpaque(true);
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 640, 410);
+        jLabel4.setBounds(0, 0, 770, 510);
 
-        setSize(new java.awt.Dimension(663, 456));
+        setSize(new java.awt.Dimension(789, 552));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -160,6 +166,7 @@ String p=jPasswordField1.getText();
     private javax.swing.JButton LoginButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;

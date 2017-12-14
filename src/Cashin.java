@@ -68,6 +68,7 @@ check = b;
         cfm = new javax.swing.JCheckBox();
         jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -81,17 +82,21 @@ check = b;
         jLabel1.setToolTipText("");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(161, 110, 76, 24);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(275, 112, 99, 22);
 
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(275, 112, 120, 30);
+
+        jTextField3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(444, 180, 97, 22);
+        jTextField3.setBounds(444, 180, 140, 30);
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,7 +104,7 @@ check = b;
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(275, 219, 49, 25);
+        jButton1.setBounds(290, 270, 80, 50);
 
         cfm.setText("confirm");
         cfm.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +113,7 @@ check = b;
             }
         });
         getContentPane().add(cfm);
-        cfm.setBounds(275, 152, 71, 25);
+        cfm.setBounds(290, 180, 71, 25);
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton4.setText("Home");
@@ -118,18 +123,24 @@ check = b;
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(271, 325, 103, 37);
+        jButton4.setBounds(280, 370, 103, 37);
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setText("Amount Cashed In");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(444, 115, 105, 16);
+        jLabel2.setBounds(444, 115, 180, 40);
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel4.setText("Online Banking System");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(220, 20, 300, 40);
 
         jLabel3.setBackground(new java.awt.Color(0, 153, 153));
         jLabel3.setOpaque(true);
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 0, 640, 410);
+        jLabel3.setBounds(0, 0, 710, 490);
 
-        setSize(new java.awt.Dimension(654, 452));
+        setSize(new java.awt.Dimension(729, 529));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -228,6 +239,7 @@ dispose();
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
